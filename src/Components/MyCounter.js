@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import CounterDisplayer from './CounterDisplayer';
 import EvenCounterDisplayer from './EvenCounterDisplayer';
+import IncreaseDecreaseCount from './IncreaseDecreaseCount';
 
 export default class MyCounter extends Component {
   constructor() {
@@ -38,12 +39,13 @@ export default class MyCounter extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.allClicksCounter}
+        {/* <button onClick={this.allClicksCounter}
         >
           Add one
-        </button>
-        <CounterDisplayer counts={this.state.click_counts} />
-        <EvenCounterDisplayer evenCount={this.state.updated_state} />
+        </button> */}
+        {/* <CounterDisplayer counts={this.state.click_counts} />
+        <EvenCounterDisplayer evenCount={this.state.updated_state} /> */}
+        <IncreaseDecreaseCount />
       </div>
     )
   }

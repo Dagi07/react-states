@@ -25,6 +25,7 @@ import Component1 from "./Components/UseContext/Component1";
 // useContext
 import UsingUseContext from "./Components/UseContext/UsingUseContext";
 import MyCounter from "./Components/MyCounter";
+import UseEffectForTitle from "./Components/UseEffectForTitle";
 
 // First creat context
 export const MyContext = React.createContext();
@@ -33,7 +34,8 @@ function App() {
   return (
     <div className="App">
       {/* <UsingClassLifeCycleComponent /> */}
-      <MyCounter/>
+      {/* <MyCounter/> */}
+      <UseEffectForTitle/>
     </div>
   );
 }
